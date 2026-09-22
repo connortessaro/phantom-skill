@@ -189,15 +189,15 @@ the upstream was honest. Say it that way if you are reporting on it.
 
 ## The CLI
 
-`phantom-key` wraps the key routes for shell use. JSON on stdout by default,
+`phantomai` wraps the key routes for shell use. JSON on stdout by default,
 `--table` for reading, and exit code 2 specifically means the key was rejected
 — so a script can branch on 2 as "get a new key" rather than "retry".
 
 ```bash
 export PHANTOM_API_KEY=sk-phantom-...
-npx phantom-key balance
-npx phantom-key child --amount 0.50 --ttl 6 --rate 0.10
-npx phantom-key burn
+npx phantomai balance
+npx phantomai child --amount 0.50 --ttl 6 --rate 0.10
+npx phantomai burn
 ```
 
 Also `budget get|set|clear`, `topup`, `merge`, `rotate`. `PHANTOM_BASE_URL`
