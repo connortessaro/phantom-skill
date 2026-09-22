@@ -36,7 +36,7 @@ Or copy `skills/phantom/` into your agent's skills directory by hand.
 
 ## Also useful
 
-- `npx phantomai` — CLI for the same key operations from a shell
+- `npx phantom-key` — CLI for the same key operations from a shell
 - [phantom.codes/docs/concepts](https://phantom.codes/docs/concepts) — the same
   ideas written for a person
 - [phantom.codes/docs](https://phantom.codes/docs) — curl for every endpoint
