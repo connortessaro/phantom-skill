@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "phantom",
+  "displayName": "Phantom",
+  "version": "0.1.0",
+  "description": "Pay for inference with prepaid, identity-free API keys: mint capped child keys for subagents, sweep the remainder back, and verify a signed receipt of which model served the call.",
+  "author": {
+    "name": "Connor Tessaro",
+    "url": "https://phantom.codes"
+  },
+  "homepage": "https://phantom.codes/docs/concepts",
+  "repository": "https://github.com/connortessaro/phantom-skill",
+  "license": "MIT",
+  "keywords": ["phantom", "inference", "api-key", "agent", "subagent", "budget", "llm", "receipts", "x402"]
+}

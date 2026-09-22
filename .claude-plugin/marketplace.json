@@ -1,0 +1,14 @@
+{
+  "name": "phantom",
+  "owner": {
+    "name": "Connor Tessaro",
+    "url": "https://phantom.codes"
+  },
+  "plugins": [
+    {
+      "name": "phantom",
+      "source": "./",
+      "description": "Use the Phantom inference API: prepaid identity-free keys, capped child keys for subagents, and signed receipts."
+    }
+  ]
+}
