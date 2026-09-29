@@ -190,18 +190,21 @@ the upstream was honest. Say it that way if you are reporting on it.
 
 ## The CLI
 
-`phantom-key` wraps the key routes for shell use. JSON on stdout by default,
-`--table` for reading, and exit code 2 specifically means the key was rejected
-— so a script can branch on 2 as "get a new key" rather than "retry".
+The `phantom-key` command wraps the key routes for shell use. It ships in the
+`@connortessaro/pai` package, so name that package when you run it. The old
+standalone `phantom-key` package on npm is deprecated. JSON on stdout by default,
+`--table` for reading. Exit code 2 means the key was rejected, so a script can
+branch on 2 as "get a new key" rather than "retry".
 
 ```bash
 export PHANTOM_API_KEY=sk-phantom-...
-npx phantom-key balance
-npx phantom-key child --amount 0.50 --ttl 6 --rate 0.10
-npx phantom-key burn
+npx -p @connortessaro/pai phantom-key balance
+npx -p @connortessaro/pai phantom-key child --amount 0.50 --ttl 6 --rate 0.10
+npx -p @connortessaro/pai phantom-key burn
 ```
 
-Also `budget get|set|clear`, `topup`, `merge`, `rotate`. `PHANTOM_BASE_URL`
+Also `budget get|set|clear` and `rotate`. Top-ups and merges have no command;
+call `POST /v1/key/topup` and `POST /v1/key/merge` directly. `PHANTOM_BASE_URL`
 overrides the host.
 
 ## Things that will bite you
